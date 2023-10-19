@@ -1,4 +1,3 @@
-FROM jdk:17
-EXPOSE 8089
-ADD target/learnings.jar learnings.jar
+FROM openjdk:8
+EXPOSE 8080
 ENTRYPOINT [".java",".jar","/learnings.jar"]
